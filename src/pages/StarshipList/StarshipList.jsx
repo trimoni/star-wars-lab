@@ -15,11 +15,17 @@ const StarshipList = () => {
 
   return (
     <>
+    <main className="align">
+      <div className="icon-container">
       {starships.map(starship => 
         <Link to="/starships" state={{ starship }} key={starship.name}>
+          <div className="class-div">
           {starship.name}
+          </div>
         </Link>
       )}
+      </div>
+      </main>
     </>
   );
 };
